@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>Nerd's</title>
     </head>
     <body>
         <header class="main-header">
-            <h1>Nerd's</h1>
             <nav class="main-navigation">
+                <a class="main-header-logo">
+                    <img src="img/index-logo.svg" alt="Логотип Nerd's">
+                </a>
             <ul class="site-navigation">
                 <li><a href="studio.html">СТУДИЯ</a></li>
                 <li><a href="clients.html">КЛИЕНТЫ</a></li>
                 <li><a href="shop.html">МАГАЗИН</a></li>
                 <li><a href="contacts.html">КОНТАКТЫ</a></li>
-                <li><a href="studio.html">КОРЗИНА</a></li>
+                <li><a href="studio.html"><span class="icon">#</span> КОРЗИНА</a></li>
             </ul>
             </nav>
         </header>
-        <main>
-            <article class="slider">
+        <main class="container">
+            <h1 class="visually-hidden">Дизайн студия Nerd's</h1>
+            <section class="slider">
                 <div>
                 <h2>Долго,дорого,скурпулезно</h2>
                 <p>
                     Математически выверенный дизайн
                     для вашего сайта или мобильного приложения
                 </p>
-                <a href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-                <img src="">
+                <a href="studio.html" class="button">УЗНАТЬ БОЛЬШЕ</a>
+                <img src="#">
                 </div>
                 <div>
                     <h2>Любим математику
@@ -36,8 +39,8 @@
                         Никакого креатива, только математические формулы
                         для расчета идеальных пропорций.
                     </p>
-                    <a href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="">
+                    <a href="studio.html" class="button">УЗНАТЬ БОЛЬШЕ</a>
+                    <img src="#">
                 </div>
                 <div>
                     <h2>
@@ -48,41 +51,42 @@
                         Работать днем как все? Мы против этого.
                         Ближе к полуночи работа только начинается.
                     </p>
-                    <a href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="">
+                    <a href="studio.html" class="button">УЗНАТЬ БОЛЬШЕ</a>
+                    <img src="#">
                 </div>
-            </article>
-            <section class="products">
+            </section>
+            <section class="advantages">
+                <h2 class="visually-hidden">Наши преимущества</h2>
                 <div>
-                <img src="">
+                <img src="#">
                 <h3>ВЕБ-САЙТЫ</h3>
                 <p>
                     Мир никогда не будет прежним
                     после того как увидит ваш сайт!
                 </p>
-                <a href="shop.html">ЗАКАЗАТЬ</a>
+                <a href="shop.html" class="button">ЗАКАЗАТЬ</a>
                 </div>
                 <div>
-                    <img src="">
+                    <img src="#">
                     <h3>ПРИЛОЖЕНИЯ</h3>
                     <p>
                         Покорите топ-10 приложений в
                         AppStore и Google Play
                     </p>
-                    <a href="shop.html">ЗАКАЗАТЬ</a>
+                    <a href="shop.html" class="button">ЗАКАЗАТЬ</a>
                     </div>
                     <div>
-                        <img src="">
+                        <img src="#">
                         <h3>ПРЕЗЕНТАЦИИ</h3>
                         <p>
                             Вы даже не подозреваете,
                             насколько вы изумительны!
                         </p>
-                        <a href="shop.html">ЗАКАЗАТЬ</a>
+                        <a href="shop.html" class="button">ЗАКАЗАТЬ</a>
                         </div>
             </section>
-            <article class="about-us">
-                <div class="left">
+            <section class="about-us">
+                <h2 class="visually-hidden">О нас</h2>
                 <p>Мы - маленькая, но гордая
                     дизайн-студия из Краснодара.
                 </p>
@@ -99,8 +103,7 @@
                     <li>Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
                 </div>
-                <div class="right">
-                    <img src="">
+                    <img src="#">
                     <table>
                         <caption>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</caption>
                         <tr>
@@ -111,9 +114,57 @@
                         </tr>
                     </table>
                 </div>
-            </article>
+            </section>
+            <section class="partners">
+                <h2 class="visually-hidden">Наши партнеры</h2>
+                <img src="#">
+                <img src="#">
+                <img src="#">
+                <img src="#">
+            </section>
         </main>
-        <footer>
+        <footer class="main-footer">
+            <section class="contacts">
+                <h2 class="visually-hidden">Как нас найти</h2>
+                    <p> 
+                        NERDS DESIGN STUDIO</br>
+                        191186, Санкт-Петербург,</br>
+                        ул. Б. Конюшенная, д. 19/8</br>
+                        тел. +7 (812) 275-75-75
+                    </p>
+                    <a href="contacts.html" class="button">
+                        НАПИШИТЕ НАМ
+                    </a>
+            </section>
+                <div class="footer-social">
+                    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+                <ul>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+                </div>
         </footer>
+        <section class="modal modal-contacts">
+            <h2>Напишите нам</h2>
+            <form class="contacts-form" action="index.html" method="POST">
+                <p class="contacts-item">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+                </p>
+                <p class="contacts-item">
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
+                </p>
+                <p class="contacts-item">
+                    <label for="text">Текст письма:</label>
+                <textarea id="text" name="text" placeholder="В свободной форме" required></textarea>
+            </p>
+                <button class="button" type="submit">ОТПРАВИТЬ</button>
+                <span class="modal-close">x</span>
+            </form>
+        </section>
     </body>
 </html>
