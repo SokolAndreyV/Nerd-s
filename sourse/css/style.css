@@ -76,8 +76,24 @@ a {
     color: #000000;
 }
 
-.list-orders-name {
+.list-orders-name,
+.about-us-since {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+}
+
+.list-orders {
+    list-style: none;
+}
+
+.about-us-procent {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.about-us-elements {
+    line-height: 18px;
 }
