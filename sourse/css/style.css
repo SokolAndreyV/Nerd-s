@@ -87,6 +87,14 @@ a {
     list-style: none;
 }
 
+.list-orders li::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: red;
+}
+
 .about-us-procent {
     font-size: 45px;
     line-height: 10px;
@@ -96,4 +104,8 @@ a {
 
 .about-us-elements {
     line-height: 18px;
+}
+
+.partners-elements {
+    list-style: none;
 }
