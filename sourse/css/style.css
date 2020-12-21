@@ -222,3 +222,22 @@ a {
     line-height: 18px;
     font-weight: 700;
 }
+
+.contacts-item input {
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid #d7dcde;
+}
+
+.contacts-item input:hover {
+    border: 2px solid #b4b9bb ;
+}
+
+.contacts-item input:focus {
+    border: 2px solid #000000;
+}
+
+.contacts-item input:invalid {
+    border: 2px solid #e74246;
+}
