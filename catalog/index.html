@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nerd's</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../sourse/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../sourse/css/style.css">
+</head>
+
+<body>
+    <div class="header-slider-catalog">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo" href="../index.html">
+                    <img src="../sourse/image/nerds-logo.svg" alt="Логотип Nerd's" width="160px" height="65px">
+                </a>
+                <ul class="site-navigation">
+                    <li><a href="studio.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a class="index-page" href="../catalog/index.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="user-navigation">
+                    <li class="user-navigation-icon"><a href="studio.html"> Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="first-name">Магазин готовых шаблонов</h1>
+    </div>
+    <main class="container-wr">
+        <section class="parameters">
+            <form class="user-menu" method="GET" action="index.html">
+                <div class="parameters-price">
+                    <p>Стоимость:</p>
+                    <div class="range">
+                        <input type="range" id="price" name="price" min="0" max="25000" step="1000">
+                    </div>
+                    <div class="price-number">
+                    <label for="from">ОТ</label>
+                    <input type="number" id="from" name="from" value="0">
+                    <label for="to">ДО</label>
+                    <input type="number" id="to" name="to" value="25000">
+                    </div>
+                </div>
+                <div class="parameters-grid">
+                <p>Сетка:</p>
+                <input class="custom-radio" type="radio" checked id="adaptive" name="grid" value="adaptive">
+                <label for="adaptive">Адаптивная</label>
+                <input class="custom-radio" type="radio" id="fixed" name="grid" value="fixed">
+                <label for="fixed">Фиксированная</label>
+                <input class="custom-radio" type="radio" id="rubber" name="grid" value="rubber" disabled checked>
+                <label for="rubber">Резиновая</label>
+                </div>
+                <div class="parameters-features">
+                <p>Особенности:</p>
+                <input class="custom-checkbox" type="checkbox" id="slider" name="slider">
+                <label for="slider">Слайдер</label>
+                <input class="custom-checkbox" type="checkbox" id="adv" name="adv">
+                <label for="adv">Блок преймуществ</label>
+                <input class="custom-checkbox" type="checkbox" id="news" name="news">
+                <label for="news">Новости</label>
+                <input class="custom-checkbox" type="checkbox" id="galery" name="galery">
+                <label for="galery">Галерея</label>
+                <input class="custom-checkbox" type="checkbox" id="card" name="card">
+                <label for="card">Корзина</label>
+            </div>
+                <button class="button" type="submit">Показать</button>
+                
+            </form>
+        </section>
+        <div class="main-content">
+        <section class="sorting">
+        <p>Сортировать:</p>
+        <div class="sorting-item-block">
+        <div class="sorting-item">по цене</div>
+        <div class="sorting-item">по типу</div>
+        <div class="sorting-item">по названию</div>
+        <div class="sorting-button">
+            <img class="sorting-item" src="../sourse/image/icon-up-dir.svg">
+            <img class="sorting-item" src="../sourse/image/icon-down-dir.svg">
+        </div>
+        </div>
+        </section>
+        <section class="cards">
+        <div class="test">
+            <img src="../sourse/image/img-sedona.jpg.jpg">
+            <div class="test-info">
+                <h3>Sedona</h3>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="button">9 900 руб.</a>
+            </div>
+        </div>
+        <div class="test">
+            <img src="../sourse/image/img-pink.jpg.jpg">
+            <div class="test-info">
+                <h3>Pink App</h3>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="#" class="button">9 900 руб.</a>
+            </div>
+        </div>
+        <div class="test">
+            <img src="../sourse/image/img-barbershop.jpg.jpg">
+            <div class="test-info">
+                <h3>Barbershop</h3>
+                <p>Сайт салоны красоты.Для мужчин, да.</p>
+                <a href="#" class="button">9 900 руб.</a>
+            </div>
+        </div>
+        <div class="test">
+            <img src="../sourse/image/img-mishka.jpg.jpg">
+            <div class="test-info">
+                <h3>Mishka</h3>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a href="#" class="button">9 900 руб.</a>
+            </div>
+        </div>
+        <div class="test">
+            <img src="../sourse/image/img-aplus.jpg.jpg">
+            <div class="test-info">
+                <h3>A plus</h3>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a href="#" class="button">9 900 руб.</a>
+            </div>
+        </div>
+        <div class="test">
+            <img src="../sourse/image/img-kvast.jpg.jpg">
+            <div class="test-info">
+                <h3>Кваст</h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a href="#" class="button">9 900 руб.</a>
+            </div>
+        </div>
+        </section>
+        <section class="cards-menu">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">Следующая</button>
+        </section>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="contacts-wr">
+            <div class="container">
+                <section class="contacts">
+                    <h2 class="visually-hidden">Как нас найти</h2>
+                    <p>
+                        <span class="contacts-studio-name">Nerds design studio</span>
+                        <span class="contacts-studio-address"> 191186, Санкт-Петербург,</br>ул. Б. Конюшенная, д.
+                            19/8</span>
+                        <span class="contacts-studio-tel">тел. +7 (812) 275-75-75</span>
+                    </p>
+                    <a href="contacts.html" class="button">
+                        Напишите нам
+                    </a>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <section class="footer-social">
+                <div class="social-wr">
+                    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+                    <strong>Давайте дружить, это выгодно!</strong>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+                <ul class="social-list">
+                    <li><a class="social-button" href="#">
+                            <div class="social-icon-vk"></div><span class="visually-hidden">Вконтакте</span>
+                        </a></li>
+                    <li><a class="social-button" href="#">
+                            <div class="social-icon-fb"></div><span class="visually-hidden">Фейсбук</span>
+                        </a></li>
+                    <li><a class="social-button" href="#">
+                            <div class="social-icon-inst"></div><span class="visually-hidden">Инстаграм</span>
+                        </a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
